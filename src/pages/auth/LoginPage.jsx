@@ -3,6 +3,7 @@ import { useAuth } from "../../hooks/useAuth";
 import { Button } from "../../components/ui/Button";
 import { Input } from "../../components/ui/Input";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 export const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -53,6 +54,12 @@ export const LoginPage = () => {
           <Button type='submit' className='w-full mt-2' isLoading={loading}>
             Sign in
           </Button>
+          <p className='text-center text-sm text-gray-500 mt-4'>
+            Don't have an account?{" "}
+            <Link to='/register' className='text-primary hover:underline'>
+              Register
+            </Link>
+          </p>
         </form>
       </div>
     </div>

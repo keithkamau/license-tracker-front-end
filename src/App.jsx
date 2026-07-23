@@ -8,6 +8,7 @@ import { LicensesPage } from "./pages/licenses/LicensesPage";
 import { MyLicensePage } from "./pages/licenses/MyLicensePage";
 import { UsersPage } from "./pages/users/UsersPage";
 import { NotificationsPage } from "./pages/notifications/NotificationsPage";
+import { RegisterPage } from './pages/auth/RegisterPage'
 import useAuthStore from "./store/authStore";
 
 const queryClient = new QueryClient({
@@ -33,6 +34,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
+          <Route path='/register' element={<RegisterPage />} />
           <Route path='/login' element={<LoginPage />} />
           <Route element={<DashboardLayout />}>
             <Route
