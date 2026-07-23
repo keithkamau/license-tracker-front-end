@@ -92,7 +92,12 @@ export const RegisterPage = () => {
             onChange={handleChange}
             options={[
               { value: "agent", label: "Agent" },
-              ...(user?.role === "admin" ? [{ value: "hr", label: "HR" }] : []),
+              ...(user?.role === "admin"
+                ? [
+                    { value: "hr", label: "HR" },
+                    { value: "admin", label: "Admin" },
+                  ]
+                : []),
             ]}
           />
 
