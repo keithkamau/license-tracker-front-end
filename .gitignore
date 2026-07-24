@@ -36,8 +36,15 @@ pnpm-debug.log*
 coverage/
 .nyc_output/
 
-# Misc
-*.pem
-.cache/
-.tmp/
-temp/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.env
+.env*
