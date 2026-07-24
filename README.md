@@ -3,6 +3,7 @@
 React frontend for the Agent License Compliance Tracker.
 
 ## Tech Stack
+
 - React 18
 - Vite
 - Tailwind CSS
